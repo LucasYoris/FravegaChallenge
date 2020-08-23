@@ -26,8 +26,8 @@ public class Filtro extends TestBase {
     @Given("^el usuario realiza una busqueda del articulo 'Heladeras'$")
     public void el_usuario_realiza_una_busqueda_del_articulo_Heladeras() throws Throwable {
         WebElement barraBusqueda = driver.findElement(homePage.getBarraSearch());
-        barraBusqueda.sendKeys(homePage.getBusqueda());
         barraBusqueda.clear();
+        barraBusqueda.sendKeys(homePage.getBusqueda());
         barraBusqueda.sendKeys(Keys.ENTER);
     }
 
